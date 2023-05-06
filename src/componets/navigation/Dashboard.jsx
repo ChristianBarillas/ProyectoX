@@ -22,9 +22,9 @@ const Dashboard = () => {
   
 
   <Route path="/" element={<Home/>}/>
-  <Route path="/books" element={<Books/>}/>
+  <Route path="/intro" element={<Intro/>}/>
   <Route path="/Contact" element={<ContactU/>}/>
-  <Route path="/signUp" element={<SignUp/>}/>
+  <Route path="/about" element={<SignUp/>}/>
   
 
 </Routes>
