@@ -1,11 +1,17 @@
+// ESSENTIAL COMPONENT ABOUT REACT
 import React from "react";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Navbar from "../navigation/Navbar";
-import Home from "../../pages/Home";
-import About from "../../pages/About";
+
+// LOGIN
 import SignUp from "../login/SignUp";
-import Books from "../../pages/Books";
-import ContactU from "../../pages/ContactUs";
+
+//PAGES 
+import Home from "../../pages/Home";
+import Intro from "../../pages/Intro";
+import Catalogue from "../../pages/Catalogue";
+import Somos from "../../pages/Somos";
+import Contact from "../../pages/Contact";
 
 
 
@@ -23,8 +29,10 @@ const Dashboard = () => {
 
   <Route path="/" element={<Home/>}/>
   <Route path="/intro" element={<Intro/>}/>
-  <Route path="/Contact" element={<ContactU/>}/>
-  <Route path="/about" element={<SignUp/>}/>
+  <Route path="/services" element={<Catalogue/>}/>
+  <Route path="/about" element={<Somos/>}/>
+  <Route path="/Contact" element={<Contact/>}/>
+  <Route path="/register" element={<SignUp/>}/>
   
 
 </Routes>

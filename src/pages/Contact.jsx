@@ -2,9 +2,7 @@ import React from 'react'
 
 
 
-
-
-const Intro = () =>{
+const Contact = () =>{
 
     return(
 
@@ -17,4 +15,4 @@ const Intro = () =>{
 }
 
 
-export default Intro
+export default Contact
