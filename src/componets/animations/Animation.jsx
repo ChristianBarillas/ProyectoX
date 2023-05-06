@@ -7,7 +7,7 @@ const AnimatedText=()=> {
   useEffect(() => {
     if (elementRef.current) {
       const typed = new Typed(elementRef.current, {
-        strings: ['Find our products here!','Books?', 'You can find links below!'],
+        strings: ['SERVICES','TECHNOLOGY', 'AND MORE!'],
        typeSpeed:100,
        backSpeed:100,
        backDelay:1000,
