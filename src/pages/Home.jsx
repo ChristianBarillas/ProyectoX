@@ -1,14 +1,8 @@
 import React from 'react'
 import HeadInfo from '../componets/headerInfo/HeadInfo'
-import Footer from '../componets/contact/Footer'
-import Flags from '../componets/swiper/Flags'
-import InformativeSection from '../componets/swiper/InformativeSection'
-import CheckoutForm from '../componets/payment/CheckoutForm'
-import About from './About'
-import Intro from '../componets/intros/intro'
-import Description from '../componets/intros/Description'
-import Service from '../componets/services/Service'
 import Details1 from '../componets/details/Details1'
+import Intro1 from '../componets/intros/Intro1'
+import Description1 from '../componets/intros/Description1'
 
 
 const Home =()=>{
@@ -18,9 +12,10 @@ const Home =()=>{
     <div>
    
     <HeadInfo/>
-    <Intro/>
-    <Description/>
+    <Intro1/>
+    <Description1/>
     <Details1/>
+    
     
 
   {/* <InformativeSection/>

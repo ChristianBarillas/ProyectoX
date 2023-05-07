@@ -8,7 +8,6 @@ import SignUp from "../login/SignUp";
 
 //PAGES 
 import Home from "../../pages/Home";
-import Intro from "../../pages/Intro";
 import Catalogue from "../../pages/Catalogue";
 import Somos from "../../pages/Somos";
 import Contact from "../../pages/Contact";

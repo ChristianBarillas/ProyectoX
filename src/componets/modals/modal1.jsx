@@ -4,7 +4,7 @@ import React from 'react'
 
 
 
-const Intro = () =>{
+const About = () =>{
 
     return(
 
@@ -17,4 +17,4 @@ const Intro = () =>{
 }
 
 
-export default Intro
+export default About

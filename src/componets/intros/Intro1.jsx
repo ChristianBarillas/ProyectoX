@@ -1,10 +1,10 @@
 import React from 'react'
-import ImgNegocio from '/src/assets/img/negocio.jpg'
+import negocioImg from '/src/assets/img/consultoria.jpg'
 
 
 
 
-const Intro =()=>{
+const Intro1 =()=>{
 
   return (
 
@@ -24,7 +24,7 @@ const Intro =()=>{
                 </div> 
                 <div class="col-lg-7">
                     <div class="image-container">
-                        <img class="img-fluid" src={ImgNegocio} alt="img"/>
+                        <img class="img-fluid" src={negocioImg} alt=""/>
                     </div> 
                 </div> 
             </div> 
@@ -37,4 +37,4 @@ const Intro =()=>{
     </div>
   )
 }
-export default Intro
+export default Intro1

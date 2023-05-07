@@ -13,6 +13,19 @@ const Informative1 = () =>{
         <div>
 
 
+ {/* Header  */}
+ <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Conoce Nuestro Trabajo</h1>
+                </div>    {/* end of col  */}
+            </div>{/* end of row  */}
+        </div>  {/* end of container */}
+    </header> 
+    {/* end of ex-header */}
+     {/* end of header */}
+
  {/* About  */}
     <div id="about" class="counter">
         <div class="container">

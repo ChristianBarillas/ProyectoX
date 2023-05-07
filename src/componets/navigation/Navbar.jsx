@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
 import Perfil from "../login/Perfil";
 import SignUp from "../login/SignUp";
@@ -55,7 +57,12 @@ const Navbar = ()=>{
 
                
             </ul>
-            <span className="nav-item social-icons"> <span className="fa-stack"> <a href="https://www.facebook.com/gosensv"> <span className="hexagon"></span> <em className="fab fa-facebook-f fa-stack-1x"></em> </a> </span>  <span className="fa-stack"> <a href="https://twitter.com/gosensv"> <span className="hexagon"></span> <em className="fab fa-twitter fa-stack-1x"></em> </a> </span> </span></div> 
+            <span className="nav-item social-icons"> <span className="fa-stack">  <a href="https://www.facebook.com/gosensv" target="_blank" rel="noopener" > <span className="hexagon"></span><FontAwesomeIcon icon={faCoffee} /> </a> </span>  <span className="fa-stack"> <a href="https://twitter.com/gosensv" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faCoffee} />  </a> </span> </span></div> 
+
+
+
+{/* 
+            <span className="nav-item social-icons"> <span className="fa-stack"> <a href="https://www.facebook.com/gosensv"> <span className="hexagon"></span> <em className="fab fa-facebook-f fa-stack-1x"></em> </a> </span>  <span className="fa-stack"> <a href="https://twitter.com/gosensv">  <em className="fab fa-twitter fa-stack-1x"></em> </a> </span> </span></div>  */}
     </nav> 
  
 

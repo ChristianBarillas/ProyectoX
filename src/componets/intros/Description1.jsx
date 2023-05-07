@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faMagnifyingGlassChart} from '@fortawesome/free-solid-svg-icons';
 
 
 
-const Description =()=>{
+
+const Description1 =()=>{
 
   return (
 
@@ -17,7 +20,7 @@ const Description =()=>{
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
-                            <i class="fas fa-binoculars fa-stack-1x"></i>
+                            <FontAwesomeIcon icon={faMagnifyingGlassChart} />
                         </span>
                         <div class="card-body">
                             <h4 class="card-title">Análisis de Ambiente</h4>
@@ -67,4 +70,4 @@ const Description =()=>{
     </div>
   )
 }
-export default Description
+export default Description1

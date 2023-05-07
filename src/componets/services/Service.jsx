@@ -13,6 +13,20 @@ const Service =()=>{
 
     <div>
 
+
+ {/* Header  */}
+    <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Services</h1>
+                </div>    {/* end of col  */}
+            </div>{/* end of row  */}
+        </div>  {/* end of container */}
+    </header> 
+    {/* end of ex-header */}
+     {/* end of header */}
+
 {/* Services  */}
     <div id="services" class="cards-2">
         <div class="container">
