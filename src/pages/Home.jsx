@@ -5,6 +5,8 @@ import Flags from '../componets/swiper/Flags'
 import InformativeSection from '../componets/swiper/InformativeSection'
 import CheckoutForm from '../componets/payment/CheckoutForm'
 import About from './About'
+import Intro from '../componets/intros/intro'
+import Description from '../componets/intros/Description'
 
 
 const Home =()=>{
@@ -14,8 +16,11 @@ const Home =()=>{
     <div>
    
     <HeadInfo/>
-  <InformativeSection/>
-    <Footer/>
+    <Intro/>
+    <Description/>
+
+  {/* <InformativeSection/>
+    <Footer/> */}
       
     </div>
   )

@@ -34,9 +34,7 @@ const Navbar = ()=>{
                 <li className="nav-item">
                     <Link className="nav-link page-scroll" to="/">HOME <span className="sr-only">(current)</span></Link>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link page-scroll" to="/intro">INTRO</Link>
-                </li>
+             
                 <li className="nav-item">
                     <Link className="nav-link page-scroll" to="/services">CATALOGO</Link>
               

@@ -28,7 +28,6 @@ const Dashboard = () => {
   
 
   <Route path="/" element={<Home/>}/>
-  <Route path="/intro" element={<Intro/>}/>
   <Route path="/services" element={<Catalogue/>}/>
   <Route path="/about" element={<Somos/>}/>
   <Route path="/Contact" element={<Contact/>}/>
