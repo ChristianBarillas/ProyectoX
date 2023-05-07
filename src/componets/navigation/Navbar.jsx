@@ -44,11 +44,11 @@ const Navbar = ()=>{
                 </li>
        
                 <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle page-scroll" to="/contact" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACTO</a>
+                    <Link className="nav-link dropdown-toggle page-scroll" to="/contact" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACTO</Link>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link className="dropdown-item" to="/terms-conditions.html"><span className="item-text">CONDICIONES</span></Link>
+                        <Link className="dropdown-item" to="/terms-conditions"><span className="item-text">CONDICIONES</span></Link>
                         <div className="dropdown-items-divide-hr"></div>
-                        <Link className="dropdown-item" to="/privacy-policy.html"><span className="item-text">POLITICA</span></Link>
+                        <Link className="dropdown-item" to="/privacy-policy"><span className="item-text">POLITICA</span></Link>
                     </div>
                 </li>
           

@@ -1,5 +1,8 @@
 import React from 'react'
-import ImgNegocio from '/src/assets/img/negocio.jpg'
+import SoftwareImg from '/src/assets/img/software.jpg'
+import HardwareImg from '/src/assets/img/hardware.jpg'
+import ConsultoriaImg from '/src/assets/img/consultoria.jpg'
+
 
 
 
@@ -10,22 +13,24 @@ const Service =()=>{
 
     <div>
 
-<!-- Services -->
+{/* Services  */}
     <div id="services" class="cards-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">CATALOGO</div>
-                    <h2>Encuentra aquí lo que buscas<br></h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                    <h2>Encuentra aquí lo que buscas<br/></h2>
+                </div> 
+                {/* end of col */}
+            </div> 
+            {/* end of row  */}
             <div class="row">
                 <div class="col-lg-12">
                     
-                    <!-- Card -->
+                     {/* Card  */}
                     <div class="card">
                         <div class="card-image">
-                            <img class="img-fluid" src="images/software.jpg" alt="alternative">
+                            <img class="img-fluid" src={SoftwareImg} alt="alternative"/>
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Software</h3>
@@ -52,14 +57,15 @@ const Service =()=>{
                         </div>
                         <div class="button-container">
                             <a class="btn-solid-reg page-scroll" href="#contact">CONTACTO</a>
-                        </div> <!-- end of button-container -->
+                        </div> 
+                        {/* end of button-container  */}
                     </div>
-                    <!-- end of card -->
+                     {/* end of card  */}
 
-                    <!-- Card -->
+                    {/* Card  */}
                     <div class="card">
                         <div class="card-image">
-                            <img class="img-fluid" src="images/hardware.jpg" alt="alternative"/>
+                            <img class="img-fluid" src={HardwareImg} alt="alternative"/>
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Hardware</h3>
@@ -94,7 +100,7 @@ const Service =()=>{
                     {/* Card  */}
                     <div class="card">
                         <div class="card-image">
-                            <img class="img-fluid" src="images/consultoria.jpg" alt="alternative"/>
+                            <img class="img-fluid" src={ConsultoriaImg} alt="alternative"/>
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Servicios</h3>

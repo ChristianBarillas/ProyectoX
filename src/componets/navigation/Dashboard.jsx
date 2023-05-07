@@ -12,6 +12,8 @@ import Intro from "../../pages/Intro";
 import Catalogue from "../../pages/Catalogue";
 import Somos from "../../pages/Somos";
 import Contact from "../../pages/Contact";
+import TermsConditions from "../../pages/TermsConditions";
+import PrivacyPolicy from "../../pages/PrivacyPolicy";
 
 
 
@@ -31,7 +33,12 @@ const Dashboard = () => {
   <Route path="/services" element={<Catalogue/>}/>
   <Route path="/about" element={<Somos/>}/>
   <Route path="/Contact" element={<Contact/>}/>
+
   <Route path="/register" element={<SignUp/>}/>
+
+
+  <Route path="/terms-conditions" element={<TermsConditions/>}/>
+  <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
   
 
 </Routes>

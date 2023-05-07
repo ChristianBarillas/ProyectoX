@@ -7,6 +7,8 @@ import CheckoutForm from '../componets/payment/CheckoutForm'
 import About from './About'
 import Intro from '../componets/intros/intro'
 import Description from '../componets/intros/Description'
+import Service from '../componets/services/Service'
+import Details1 from '../componets/details/Details1'
 
 
 const Home =()=>{
@@ -18,6 +20,8 @@ const Home =()=>{
     <HeadInfo/>
     <Intro/>
     <Description/>
+    <Details1/>
+    
 
   {/* <InformativeSection/>
     <Footer/> */}
