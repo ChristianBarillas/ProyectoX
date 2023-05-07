@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import Perfil from "../login/Perfil";
 import SignUp from "../login/SignUp";
 import SignOut from "../login/SignOut";
@@ -34,23 +34,23 @@ const Navbar = ()=>{
         <div className="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                    <Link className="nav-link page-scroll" to="/">HOME <span className="sr-only">(current)</span></Link>
+                    <NavLink className="nav-link page-scroll" to="/">HOME <span className="sr-only"></span></NavLink>
                 </li>
              
                 <li className="nav-item">
-                    <Link className="nav-link page-scroll" to="/services">CATALOGO</Link>
+                    <NavLink className="nav-link page-scroll" to="/services">CATALOGO</NavLink>
               
                 </li>
                  <li className="nav-item">
-                    <Link className="nav-link page-scroll" to="/about">SOMOS</Link>
+                    <NavLink className="nav-link page-scroll" to="/about">SOMOS</NavLink>
                 </li>
        
                 <li className="nav-item dropdown">
-                    <Link className="nav-link dropdown-toggle page-scroll" to="/contact" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACTO</Link>
+                    <NavLink className="nav-link dropdown-toggle page-scroll" to="/contact" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACTO</NavLink>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <Link className="dropdown-item" to="/terms-conditions"><span className="item-text">CONDICIONES</span></Link>
+                        <NavLink className="dropdown-item" to="/terms-conditions"><span className="item-text">CONDICIONES</span></NavLink>
                         <div className="dropdown-items-divide-hr"></div>
-                        <Link className="dropdown-item" to="/privacy-policy"><span className="item-text">POLITICA</span></Link>
+                        <NavLink className="dropdown-item" to="/privacy-policy"><span className="item-text">POLITICA</span></NavLink>
                     </div>
                 </li>
           

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, NavLink } from "react-router-dom";
 
 
 
@@ -46,13 +47,13 @@ const Footer = () =>{
                         <h4>De Interés</h4>
                         <ul class="list-unstyled li-space-lg">
                             <li>
-                                <a class="white" href="https://www.insaforp.org.sv/">Insaforp</a>
+                                <a class="white" href="https://www.insaforp.org.sv/" target="_blank" rel="noopener">Insaforp</a>
                             </li>
                             <li>
-                               <a class="white" href="https://learndigital.withgoogle.com/activate/courses">Actívate</a>
+                               <a class="white" href="https://learndigital.withgoogle.com/activate/courses"target="_blank" rel="noopener">Actívate</a>
                             </li>
                             <li class="media">
-                                <a class="white" href="https://aprende.org/listado-cursos">Aprende</a>
+                                <a class="white" href="https://aprende.org/listado-cursos" target="_blank" rel="noopener">Aprende</a>
                             </li>
                         </ul>
                     </div> 
@@ -64,13 +65,13 @@ const Footer = () =>{
                         <h4>Partners</h4>
                         <ul class="list-unstyled li-space-lg">
                             <li>
-                                <a class="white" href="https://www.mclogistica.com/">MC Logística.com</a>
+                                <a class="white" href="https://www.mclogistica.com/" target="_blank" rel="noopener">MC Logística.com</a>
                             </li>
                             <li>
-                                <a class="white" href="https://www.alianzamayorista.com">AMSA</a>
+                                <a class="white" href="https://www.alianzamayorista.com" target="_blank" rel="noopener">AMSA</a>
                             </li>
                             <li>
-                                <a class="white" href="https://www.soti.net/">SOTI</a>
+                                <a class="white" href="https://www.soti.net/"target="_blank" rel="noopener" >SOTI</a>
                             </li>
                         </ul>
                     </div>  {/* end of text-container */}
@@ -86,7 +87,11 @@ const Footer = () =>{
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2022 <a href="">Gosén S&T</a></p>
+                    <p class="p-small">Copyright © 2022 
+                    
+                    Gosén S&T
+                    
+                    </p>
                 </div>  {/* end of col  */}
             </div>  {/* enf of row  */}
         </div>  {/* end of container  */}

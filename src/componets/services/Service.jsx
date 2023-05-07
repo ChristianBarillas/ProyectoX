@@ -2,6 +2,7 @@ import React from 'react'
 import SoftwareImg from '/src/assets/img/software.jpg'
 import HardwareImg from '/src/assets/img/hardware.jpg'
 import ConsultoriaImg from '/src/assets/img/consultoria.jpg'
+import { Link } from 'react-router-dom'
 
 
 
@@ -46,6 +47,12 @@ const Service =()=>{
                         <div class="card-image">
                             <img class="img-fluid" src={SoftwareImg} alt="alternative"/>
                         </div>
+
+  {/* implementacion de texto sobreexpuesto en imagenes con hover */}
+                        <div class="card-text-overlay">
+                             <h4>Mi nuevo texto</h4>  
+                        </div>
+
                         <div class="card-body">
                             <h3 class="card-title">Software</h3>
                             <p>Aumenta eficiencia y productividad</p>
@@ -66,21 +73,37 @@ const Service =()=>{
                                     <i class="fas fa-square"></i>
                                     <div class="media-body">App Domicilios</div>
                                 </li>
+
+                                
                             </ul>
                             <p class="price">Conoce <span> Más</span></p>
                         </div>
+
+{/* implementando imagenes que aparecen encima */}
+
+                        <div className="card-image-hover">
+                             <img src={HardwareImg} alt="Card image hover" className="card-image-hover-img" />
+                        </div>
+                       
                         <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#contact">CONTACTO</a>
-                        </div> 
-                        {/* end of button-container  */}
-                    </div>
-                     {/* end of card  */}
+                            <Link class="btn-solid-reg page-scroll" to="/Contact" >CONTACTO</Link>
+                        </div> {/* end of button-container  */}
+
+                    </div>  {/* end of card  */}
+
+
 
                     {/* Card  */}
                     <div class="card">
                         <div class="card-image">
                             <img class="img-fluid" src={HardwareImg} alt="alternative"/>
                         </div>
+
+  {/* implementacion de texto sobreexpuesto en imagenes con hover */}
+                        <div class="card-text-overlay">
+                             <h4>Mi nuevo texto</h4>  
+                        </div>
+
                         <div class="card-body">
                             <h3 class="card-title">Hardware</h3>
                             <p>Contamos con las mejores marcas en equipo informático</p>
@@ -104,18 +127,33 @@ const Service =()=>{
                             </ul>
                             <p class="price">Conoce <span>Más</span></p>
                         </div>
+
+{/* implementando imagenes que aparecen encima */}
+                        <div className="card-image-hover">
+                             <img src={HardwareImg} alt="Card image hover" className="card-image-hover-img" />
+                        </div>
+
                         <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#callMe">CONTACTO</a>
+                            <Link class="btn-solid-reg page-scroll" to="/Contact">CONTACTO</Link>
                         </div> 
                         {/* end of button-container  */}
                     </div>
                     {/* end of card  */}
+
+
+
 
                     {/* Card  */}
                     <div class="card">
                         <div class="card-image">
                             <img class="img-fluid" src={ConsultoriaImg} alt="alternative"/>
                         </div>
+                        
+                        {/* implementacion de texto sobreexpuesto en imagenes con hover */}
+                        <div class="card-text-overlay">
+                             <h4>Mi nuevo texto</h4>  
+                        </div>
+
                         <div class="card-body">
                             <h3 class="card-title">Servicios</h3>
                             <p>Servicios profesionales de alto nivel</p>
@@ -139,8 +177,16 @@ const Service =()=>{
                             </ul>
                             <p class="price">Conoce <span>Más</span></p>
                         </div>
+
+
+{/* implementando imagenes que aparecen encima */}
+
+                        <div className="card-image-hover">
+                             <img src={HardwareImg} alt="Card image hover" className="card-image-hover-img" />
+                        </div>
+
                         <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#contact">CONTACTO</a>
+                            <Link class="btn-solid-reg page-scroll" to="/Contact" >CONTACTO</Link>
                         </div> 
                          {/* end of button-container  */}
                     </div>
