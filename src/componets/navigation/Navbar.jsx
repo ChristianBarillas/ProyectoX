@@ -22,7 +22,7 @@ const Navbar = ()=>{
       
 
         
-        <a className="navbar-brand logo-image" href="index.html"><img src={logo} alt="alternative" height= "100px" width="100px"/></a>
+        <Link className="navbar-brand logo-image" to="/"><img src={logo} alt="alternative" height= "100px" width="100px"/></Link>
         
        
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">

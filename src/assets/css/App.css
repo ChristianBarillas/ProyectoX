@@ -27,6 +27,7 @@ Table Of Contents:
 19. Back To Top Button
 20. Extra Pages
 21. Media Queries
+22. Modals
 ******************************************/
 /*****************************************
 Colors:
@@ -857,7 +858,7 @@ input[type=checkbox] {
   position: absolute;
   width: 6rem;
   height: 6rem;
-  background: url("../images/hexagon-green.svg") center center no-repeat;
+  background: url("/src/assets/img/hexagon-green.svg") center center no-repeat;
   background-size: 6rem 6rem;
 }
 
@@ -1523,13 +1524,13 @@ input[type=checkbox] {
   left: 0;
   width: 1.75rem;
   height: 1.75rem;
-  background: url("../images/hexagon-green.svg") center center no-repeat;
+  background: url("/src/assets/img/hexagon-green.svg") center center no-repeat;
   background-size: 1.75rem 1.75rem;
   transition: all 0.2s ease;
 }
 
 .basic-2 .fa-stack:hover .hexagon {
-  background: url("../images/hexagon-white.svg") center center no-repeat;
+  background: url("/src/assets/img/hexagon-white.svg") center center no-repeat;
   background-size: 1.75rem 1.75rem;
 }
 
@@ -1662,13 +1663,13 @@ input[type=checkbox] {
   position: absolute;
   width: 3.25rem;
   height: 3.25rem;
-  background: url("../images/hexagon-green.svg") center center no-repeat;
+  background: url("/src/assets/img/hexagon-green.svg") center center no-repeat;
   background-size: 3.25rem 3.25rem;
   transition: all 0.2s ease;
 }
 
 .form-2 .fa-stack:hover .hexagon {
-  background: url("../images/hexagon-white.svg") center center no-repeat;
+  background: url("/src/assets/img/hexagon-white.svg") center center no-repeat;
   background-size: 3.25rem 3.25rem;
 }
 
@@ -1734,7 +1735,7 @@ a.back-to-top {
   width: 2.625rem;
   height: 2.625rem;
   border-radius: 1.875rem;
-  background: #14bf98 url("../images/up-arrow.png") no-repeat center 47%;
+  background: #14bf98 url("/src/assets/img/up-arrow.png") no-repeat center 47%;
   background-size: 1.125rem 1.125rem;
   text-indent: -9999px;
 }
@@ -2274,5 +2275,89 @@ a:hover.back-to-top {
   /* end of navigation */
 }
 /* end of min-width width 1200px */
+/**************************/
+/*     22. Modals     */
+/**************************/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.7411764706);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s 0.9s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+  -webkit-transition: opacity 0.6s 0.9s;
+  -moz-transition: opacity 0.6s 0.9s;
+  -ms-transition: opacity 0.6s 0.9s;
+  -o-transition: opacity 0.6s 0.9s;
+}
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity 0.6s;
+  --transform: translateY(0);
+  --transition: transform .8s .8s;
+}
+
+.modal__container {
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+}
+
+.modal__title {
+  font-size: 2.5rem;
+}
+
+.modal__paragraph {
+  margin-bottom: 10px;
+}
+
+.modal__img {
+  width: 90%;
+  max-width: 300px;
+}
+
+.modal__close {
+  text-decoration: none;
+  color: #fff;
+  background-color: #F26250;
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color 0.3s;
+}
+
+.modal__close:hover {
+  color: #F26250;
+  background-color: #fff;
+}
+
+@media (max-width: 800px) {
+  .modal__container {
+    padding: 2em 1.5em;
+  }
+  .modal__title {
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=App.css.map */

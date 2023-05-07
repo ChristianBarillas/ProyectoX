@@ -2,9 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
+import Kommunicate from '@kommunicate/kommunicate-chatbot-plugin'
 
 
 import { Auth0Provider } from '@auth0/auth0-react'
+
+Kommunicate.init("3c15ac1f7d2aac35a7a8c03ff7cdee9b9" , {"popupWidget":true,"automaticChatOpenOnNavigation":true})
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

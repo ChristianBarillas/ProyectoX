@@ -1,5 +1,6 @@
 import React from 'react'
 import AnimatedText from '../animations/Animation'
+import Modal1 from '../modals/modal1'
 
 const HeadInfo=()=> {
   return (
@@ -14,7 +15,8 @@ const HeadInfo=()=> {
                         <div class="text-container">
                             <h1>BUSINESS  <AnimatedText/></h1>
                             <p class="p-heading p-large">Somos el aliado perfecto para el crecimiento de tu negocio, servicios profesionales, tecnología y más...</p>
-                            <a class="btn-solid-lg page-scroll" href="#intro">Descubre +</a>
+                            <button class="btn-solid-lg page-scroll " >Descubre</button>
+                            <Modal1/>
                         </div>
                     </div> 
                 </div> 
