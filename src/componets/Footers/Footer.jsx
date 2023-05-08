@@ -1,9 +1,4 @@
 import React from 'react'
-import { Link, NavLink } from "react-router-dom";
-
-
-
-
 
 const Footer = () =>{
 
@@ -24,24 +19,7 @@ const Footer = () =>{
                     {/* end of text-container  */}
                 </div>
                  {/* end of col  */}
-                <div class="col-md-2">
-                    <div class="text-container">
-                        <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#header">Home</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Condiciones</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Políticas</a>
-                            </li>
-                        </ul>
-                    </div> 
-                     {/* end of text-container  */}
-                </div> 
-                {/* end of col */}
+               
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>De Interés</h4>
