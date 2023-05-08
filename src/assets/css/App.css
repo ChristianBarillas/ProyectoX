@@ -1780,6 +1780,37 @@ input[type=checkbox] {
   color: #14bf98;
 }
 
+/***************************/
+/*     Christian barillas 07 may 2023     */
+.form-2 .fa-stack .hexagon {
+  border-radius: 0.5rem;
+  transition: all 400ms ease;
+  transform: translate3d(0, 0, 0);
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 2px 5px #5A80AF;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+/* Definimos la animación "float" */
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0); /* El cuadro no se mueve */
+  }
+  50% {
+    transform: translate3d(0, -2px, 2px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0); /* El cuadro vuelve a su posición original */
+  }
+}
+/***************************/
 /**********************/
 /*     17. Footer     */
 /**********************/

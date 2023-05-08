@@ -15,7 +15,7 @@ const Somos = () =>{
         <div>
 
 <Informative1/>
-<Mail/>
+
 
                 </div>
     )

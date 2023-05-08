@@ -1,6 +1,5 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faMagnifyingGlassChart} from '@fortawesome/free-solid-svg-icons';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -20,7 +19,7 @@ const Description1 =()=>{
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
-                            <FontAwesomeIcon icon={faMagnifyingGlassChart} />
+                            <i class="fas fa-binoculars fa-stack-1x"></i>
                         </span>
                         <div class="card-body">
                             <h4 class="card-title">Análisis de Ambiente</h4>
