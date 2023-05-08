@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FormSubmission = () => {
+const Mail = () => {
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
   const [mensaje, setMensaje] = useState("");
@@ -9,7 +9,7 @@ const FormSubmission = () => {
     event.preventDefault();
     const formData = { nombre, correo, mensaje };
     try {
-      const response = await fetch("/api/enviar-formulario", {
+      const response = await fetch("http://localhost:5173/api/enviar-formulario", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,4 +56,4 @@ const FormSubmission = () => {
   );
 }
 
-export default FormSubmission;
+export default Mail;

@@ -1,3 +1,5 @@
+
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
@@ -17,8 +19,8 @@ app.post("/api/send-form", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "christianbarillasyt@gmail.com",
-        pass: "christian1998xD",
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD,
       },
     });
 

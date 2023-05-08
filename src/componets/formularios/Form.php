@@ -6,7 +6,7 @@ $email = "";
 $select = "";
 $terms = "";
 $errorMSG = "";
-$EmailTo = "info@gosensv.com";
+$EmailTo = "christianbarillasyt@gmail.com";
 $Subject = "Nuevo contacto desde la web";
 
 // Validar que se hayan enviado los datos por el método POST

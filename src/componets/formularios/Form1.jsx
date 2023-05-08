@@ -40,7 +40,7 @@ const Form1 = () =>{
                 <div class="col-lg-6">
                    
                      {/* Call Me Form  */}
-                    <form action="php/callmeform-process.php" method="post" id="callMeForm" data-toggle="validator" data-focus="false">
+                     <form action="/src/componets/formularios/callmeform-process.php" method="post" id="callMeForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="lname" name="lname" required/>
                             <label class="label-control" for="lname">Nombre</label>
