@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node src/componets/server/server.cjs" 
   },
+  
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -16,6 +18,10 @@
     "@kommunicate/kommunicate-chatbot-plugin": "^0.0.6",
     "@stripe/react-stripe-js": "^2.1.0",
     "@stripe/stripe-js": "^1.52.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "framer-motion": "^10.12.8",
+    "nodemailer": "^6.9.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "swiper": "^9.2.2",
@@ -26,5 +32,10 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "vite": "^4.2.0"
-  }
+  },
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
