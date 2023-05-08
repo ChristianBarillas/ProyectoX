@@ -5,6 +5,7 @@
 .cards-1 {
 	padding-top: 3rem;
 	padding-bottom: 2.875rem;
+	
 }
 
 .cards-1 .card {
@@ -44,3 +45,38 @@
 	margin-bottom: 0.625rem;
 }
 
+
+
+/***************************/
+/*     Christian barillas 07 may 2023     */
+
+
+.card{
+	background: var(--color-bg2);
+	padding: 2rem;
+	border-radius: 2rem;
+	transition: var(--transition);
+	transform: translate3d(0, 0, 0);
+animation: float 3s ease-in-out infinite;
+	box-shadow: 0 8px 16px #5A80AF;
+	
+	
+}
+
+
+/* Definimos la animación "float" */
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0); /* El cuadro no se mueve */
+  }
+  50% {
+    transform: translate3d(0, -10px, 10px); /* El cuadro se mueve hacia arriba y hacia adelante */
+  }
+  100% {
+    transform: translate3d(0, 0, 0); /* El cuadro vuelve a su posición original */
+  }
+}
+
+
+
+/***************************/
