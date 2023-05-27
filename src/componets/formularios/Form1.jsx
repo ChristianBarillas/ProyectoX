@@ -3,20 +3,25 @@ import emailjs from '@emailjs/browser';
 
 
 
+
 const Form1 = () =>{
 
     const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_hujac84', 'template_clfzyhg', form.current, 'NvAnm4cJfNm-WENuh')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_l2457sy', 'template_9v0qkvn', form.current, 'aMTVpNLjonZPkjElR')
+      .then((result) => {
+        console.log(result.text);
+       
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  };
 
 
     return(
@@ -83,14 +88,17 @@ const Form1 = () =>{
                             <div className="help-block with-errors"></div>
                         </div>
                         <div className="form-group">
-                            <button type="submit" className="form-control-submit-button" value="send">ENVIAR</button>
+                            <button type="submit" className="form-control-submit-button" value="send" >ENVIAR</button>
+                          
+                         
                         </div>
                         <div className="form-message">
                             <div id="lmsgSubmit" className="h3 text-center hidden"></div>
                         </div>
                     </form>
                     {/* end of call me form  */}
-                    
+
+            
                 </div>
                   {/* end of col  */}
             </div> 
