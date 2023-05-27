@@ -13,7 +13,7 @@ const Navbar = ()=>{
     return(
 
         <div>
-<header classNameName="nav_main ">
+<header className="nav_main ">
   
   
 

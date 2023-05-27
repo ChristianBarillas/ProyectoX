@@ -8,14 +8,14 @@ const HeadInfo=()=> {
     <div>
 
 
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-container">
+    <header id="header" className="header">
+        <div className="header-content">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="text-container">
                             <h1>BUSINESS  <AnimatedText/></h1>
-                            <p class="p-heading p-large">Somos el aliado perfecto para el crecimiento de tu negocio, servicios profesionales, tecnología y más...</p>
+                            <p className="p-heading p-large">Somos el aliado perfecto para el crecimiento de tu negocio, servicios profesionales, tecnología y más...</p>
                            <Modal/>
                         </div>
                     </div> 

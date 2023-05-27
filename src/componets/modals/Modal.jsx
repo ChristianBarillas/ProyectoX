@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import ImgModal from '/src/assets/img/details-2-background2.jpg'
+import ImgModal from '/src/assets/img/animation-design2.svg'
 import { motion } from 'framer-motion'
 
 const Modal = ()=>{

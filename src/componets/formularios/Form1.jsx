@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 
+
 const Form1 = () =>{
 
     const form = useRef();
@@ -9,7 +10,7 @@ const Form1 = () =>{
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_l2457sy', 'template_9v0qkvn', form.current, 'aMTVpNLjonZPkjElR')
+      emailjs.sendForm('service_hujac84', 'template_clfzyhg', form.current, 'NvAnm4cJfNm-WENuh')
         .then((result) => {
             console.log(result.text);
         }, (error) => {

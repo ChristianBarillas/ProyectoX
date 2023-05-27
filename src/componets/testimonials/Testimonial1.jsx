@@ -14,31 +14,31 @@ const Testimonial1 = () =>{
 
 
  {/* Testimonials  */}
-    <div class="slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+    <div className="slider">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
                     <h2>Read Our Customer Testimonials</h2>
-                    <p class="p-heading">Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
+                    <p className="p-heading">Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
                 </div> 
                 {/* end of col  */}
             </div> 
              {/* end of row - */}
-            <div class="row">
-                <div class="col-lg-12">
+            <div className="row">
+                <div className="col-lg-12">
 
                     {/* Card Slider  */}
-                   <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
+                   <div className="slider-container">
+                        <div className="swiper-container card-slider">
+                            <div className="swiper-wrapper">
                                 
                                  {/* Slide  */}
-                               <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src={Testimonial1Img} alt="alternative"/>
-                                        <div class="card-body">
-                                            <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
-                                            <div class="testimonial-author">Jude Thorn - Founder</div>
+                               <div className="swiper-slide">
+                                    <div className="card">
+                                        <img className="card-image" src={Testimonial1Img} alt="alternative"/>
+                                        <div className="card-body">
+                                            <div className="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
+                                            <div className="testimonial-author">Jude Thorn - Founder</div>
                                         </div>
                                     </div>
                                 </div>
@@ -46,12 +46,12 @@ const Testimonial1 = () =>{
                                 {/* end of slide  */}
         
                                 {/* Slide  */}
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src={Testimonial1Img} alt="alternative"/>
-                                        <div class="card-body">
-                                            <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
-                                            <div class="testimonial-author">Marsha Singer - Marketer</div>
+                                <div className="swiper-slide">
+                                    <div className="card">
+                                        <img className="card-image" src={Testimonial1Img} alt="alternative"/>
+                                        <div className="card-body">
+                                            <div className="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
+                                            <div className="testimonial-author">Marsha Singer - Marketer</div>
                                         </div>
                                     </div>        
                                 </div> 
@@ -59,48 +59,48 @@ const Testimonial1 = () =>{
                                  {/* end of slide  */}
         
                                  {/* Slide  */}
-                               <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src={Testimonial1Img} alt="alternative"/>
-                                        <div class="card-body">
-                                            <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
-                                            <div class="testimonial-author">Roy Smith - Developer</div>
+                               <div className="swiper-slide">
+                                    <div className="card">
+                                        <img className="card-image" src={Testimonial1Img} alt="alternative"/>
+                                        <div className="card-body">
+                                            <div className="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
+                                            <div className="testimonial-author">Roy Smith - Developer</div>
                                         </div>
                                     </div>        
                                 </div>  {/* end of swiper-slide  */}
                                 {/* end of slide  */}
         
                                  {/* Slide  */}
-                               <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src={Testimonial1Img} alt="alternative"/>
-                                        <div class="card-body">
-                                            <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
-                                            <div class="testimonial-author">Ronald Spice - Owner</div>
+                               <div className="swiper-slide">
+                                    <div className="card">
+                                        <img className="card-image" src={Testimonial1Img} alt="alternative"/>
+                                        <div className="card-body">
+                                            <div className="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
+                                            <div className="testimonial-author">Ronald Spice - Owner</div>
                                         </div>
                                     </div>
                                 </div>  {/* end of swiper-slide  */}
                                  {/* end of slide  */}
         
                                  {/* Slide  */}
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src={Testimonial1Img} alt="alternative"/>
-                                        <div class="card-body">
-                                            <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
-                                            <div class="testimonial-author">Lindsay Rune - Manager</div>
+                                <div className="swiper-slide">
+                                    <div className="card">
+                                        <img className="card-image" src={Testimonial1Img} alt="alternative"/>
+                                        <div className="card-body">
+                                            <div className="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
+                                            <div className="testimonial-author">Lindsay Rune - Manager</div>
                                         </div>
                                     </div>        
                                 </div>   {/* end of swiper-slide  */}
                                  {/* end of slide  */}
         
                                  {/* Slide  */}
-                               <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src={Testimonial1Img} alt="alternative"/>
-                                        <div class="card-body">
-                                            <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
-                                            <div class="testimonial-author">Ann Black - Consultant</div>
+                               <div className="swiper-slide">
+                                    <div className="card">
+                                        <img className="card-image" src={Testimonial1Img} alt="alternative"/>
+                                        <div className="card-body">
+                                            <div className="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
+                                            <div className="testimonial-author">Ann Black - Consultant</div>
                                         </div>
                                     </div>        
                                 </div>   {/* end of swiper-slide  */}
@@ -110,8 +110,8 @@ const Testimonial1 = () =>{
                              {/* end of swiper-wrapper */}
         
                             {/* Add Arrows  */}
-                          <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                          <div className="swiper-button-next"></div>
+                            <div className="swiper-button-prev"></div>
                              {/* end of add arrows  */}
         
                       </div>    {/* end of swiper-container  */}
