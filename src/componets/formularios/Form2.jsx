@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom'
 
 
@@ -7,6 +8,20 @@ import { Link } from 'react-router-dom'
 
 const Form2 = () =>{
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_l2457sy', 'template_aklnef9', form.current, 'aMTVpNLjonZPkjElR')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
+
     return(
 
 
@@ -14,78 +29,78 @@ const Form2 = () =>{
 
 
  {/* Contact  */}
-    <div id="contact" class="form-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="section-title">CONTACTOS</div>
+    <div id="contact" className="form-2">
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-6">
+                    <div className="text-container">
+                        <div className="section-title">CONTACTOS</div>
                         <h2>Preguntas o sugerencias</h2>
                         <p>¿Necesitas mayor información sobre Gosén S&T? por favor llena el siguiente formulario.</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>Col. Miramonte, Av. Tecana #630. San Salvador, El Salvador.</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:0050323006127">+503 2300 6127</a></li>
-                            <li><i class="fas fa-phone"></i><a href="https://wa.me/50377852155">+503 7785 2155</a></li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto:info@gosensv.com">info@gosensv.com</a></li>
+                        <ul className="list-unstyled li-space-lg">
+                            <li className="address"><i className="fas fa-map-marker-alt"></i>Col. Miramonte, Av. Tecana #630. San Salvador, El Salvador.</li>
+                            <li><i className="fas fa-phone"></i><a href="tel:0050323006127">+503 2300 6127</a></li>
+                            <li><i className="fas fa-phone"></i><a href="https://wa.me/50377852155">+503 7785 2155</a></li>
+                            <li><i className="fas fa-envelope"></i><a href="mailto:info@gosensv.com">info@gosensv.com</a></li>
                         </ul>
                         <h3>Síguenos en redes sociales</h3>
 
-                        <span class="fa-stack">
+                        <span className="fa-stack">
                             <a href="https://www.facebook.com/gosensv">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                <span className="hexagon"></span>
+                                <i className="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
+                        <span className="fa-stack">
                             <a href="https://twitter.com/gosensv">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
+                                <span className="hexagon"></span>
+                                <i className="fab fa-twitter fa-stack-1x"></i>
                             </a>
                         </span>
-                          <span class="fa-stack">
+                          <span className="fa-stack">
                             <a href="#your-link">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
+                                <span className="hexagon"></span>
+                                <i className="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
+                        <span className="fa-stack">
                             <a href="https://sv.linkedin.com/company/gosensv/">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                <span className="hexagon"></span>
+                                <i className="fab fa-linkedin-in fa-stack-1x"></i>
                             </a>
                         </span>
                     </div> 
                      {/* end of text-container  */}
                 </div> 
                  {/* end of col  */}
-                <div class="col-lg-6">
+                <div className="col-lg-6">
                     
                     {/* Contact Form  */}
-                    <form action="php/contactform-process.php" method="post" id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required/>
-                            <label class="label-control" for="cname">Nombre</label>
-                            <div class="help-block with-errors"></div>
+                    <form ref={form} onSubmit={sendEmail}>
+                        <div className="form-group">
+                            <input type="text" className="form-control-input" name="user_name" id="cname" required/>
+                            <label className="label-control" for="cname">Nombre</label>
+                            <div className="help-block with-errors"></div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required/>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
+                        <div className="form-group">
+                            <input type="email" className="form-control-input" name="user_email" id="cemail" required/>
+                            <label className="label-control" for="cemail">Email</label>
+                            <div className="help-block with-errors"></div>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Mensaje</label>
-                            <div class="help-block with-errors"></div>
+                        <div className="form-group">
+                            <textarea className="form-control-textarea" name="message" id="cmessage" required></textarea>
+                            <label className="label-control" for="cmessage">Mensaje</label>
+                            <div className="help-block with-errors"></div>
                         </div>
-                        <div class="form-group checkbox">
+                        <div className="form-group checkbox">
                             <input type="checkbox" id="cterms" value="Agreed-to-Terms" required/>Estoy de acuerdo con la  <Link href="privacy-policy.html">Política de Privacidad</Link> y <a href="terms-conditions.html">Términos & Condiciones</a> 
-                            <div class="help-block with-errors"></div>
+                            <div className="help-block with-errors"></div>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">ENVIAR</button>
+                        <div className="form-group">
+                            <button type="submit" className="form-control-submit-button" value="send">ENVIAR</button>
                         </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                        <div className="form-message">
+                            <div id="cmsgSubmit" className="h3 text-center hidden"></div>
                         </div>
                     </form>
                      {/* end of contact form  */}

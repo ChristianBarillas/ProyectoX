@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom'
 
 
@@ -6,6 +7,20 @@ import { Link } from 'react-router-dom'
 
 
 const PrivacyPolicy = () =>{
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_l2457sy', 'template_aklnef9', form.current, 'aMTVpNLjonZPkjElR')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
 
     return(
 
@@ -145,19 +160,19 @@ const PrivacyPolicy = () =>{
 
                              {/* Privacy Form  */}
                             <div class="form-container">
-                                <form id="privacyForm" data-toggle="validator" data-focus="false">
+                                <form ref={form} onSubmit={sendEmail}>
                                     <div class="form-group">
-                                        <input type="text" class="form-control-input" id="pname" required/>
+                                        <input type="text" class="form-control-input" name="user_name" id="pname" required/>
                                         <label class="label-control" for="pname">Nombre</label>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control-input" id="pemail" required/>
+                                        <input type="email" class="form-control-input" name="user_email" id="pemail" required/>
                                         <label class="label-control" for="pemail">Email</label>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group">
-                                        <select class="form-control-select" id="pselect" required>
+                                        <select class="form-control-select" id="pselect" name="message" required>
                                             <option class="select-option" value="" disabled selected>Seleccione...</option>
                                             <option class="select-option" value="Delete data">Consulta de Información</option>
                                             <option class="select-option" value="Show me data">Borrado Permanente</option>
@@ -170,7 +185,7 @@ const PrivacyPolicy = () =>{
                                     </div>
 
                                     <div class="form-group">
-                                        <button type="submit" class="form-control-submit-button">ENVIAR</button>
+                                        <button type="submit" class="form-control-submit-button" value="send">ENVIAR</button>
                                     </div>
                                     <div class="form-message">
                                         <div id="pmsgSubmit" class="h3 text-center hidden"></div>
