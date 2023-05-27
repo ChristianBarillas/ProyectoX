@@ -823,6 +823,7 @@ input[type=checkbox] {
   margin: 0;
   border-radius: 0.25rem;
   transition: all 0.3s;
+  border-radius: 20px;
 }
 
 .basic-1 .image-container:hover img {
@@ -832,41 +833,26 @@ input[type=checkbox] {
 }
 
 /* end of hover animation */
-/***************************/
-/*     06. Description     */
-/***************************/
 .cards-1 {
   padding-top: 3rem;
   padding-bottom: 2.875rem;
+  display: flex;
+  justify-content: center;
 }
 
 .cards-1 .card {
   margin-bottom: 2.5rem;
   border: none;
   text-align: center;
-}
-
-.cards-1 .fa-stack {
-  width: 6rem;
-  height: 6rem;
-  margin-right: auto;
-  margin-bottom: 1rem;
-  margin-left: auto;
-  line-height: 6rem;
-  text-align: left;
-}
-
-.cards-1 .fa-stack .hexagon {
-  position: absolute;
-  width: 6rem;
-  height: 6rem;
-  background: url("/src/assets/img/hexagon-green.svg") center center no-repeat;
-  background-size: 6rem 6rem;
-}
-
-.cards-1 .fa-stack-1x {
-  color: #fff;
-  font-size: 2rem;
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px #00BF97;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards-1 .card-body {
@@ -877,31 +863,23 @@ input[type=checkbox] {
   margin-bottom: 0.625rem;
 }
 
-/***************************/
-/*     Christian barillas 07 may 2023     */
 .card {
-  background: var(--color-bg2);
-  padding: 2rem;
-  border-radius: 2rem;
   transition: var(--transition);
   transform: translate3d(0, 0, 0);
   animation: float 3s ease-in-out infinite;
-  box-shadow: 0 8px 16px #5A80AF;
 }
 
-/* Definimos la animación "float" */
 @keyframes float {
   0% {
-    transform: translate3d(0, 0, 0); /* El cuadro no se mueve */
+    transform: translate3d(0, 0, 0);
   }
   50% {
-    transform: translate3d(0, -10px, 10px); /* El cuadro se mueve hacia arriba y hacia adelante */
+    transform: translate3d(0, -10px, 10px);
   }
   100% {
-    transform: translate3d(0, 0, 0); /* El cuadro vuelve a su posición original */
+    transform: translate3d(0, 0, 0);
   }
 }
-/***************************/
 /************************/
 /*     07. Services     */
 /************************/
@@ -1055,6 +1033,7 @@ input[type=checkbox] {
   height: 27rem;
   background: url("/src/assets/img/details-1-background.jpg") center center no-repeat;
   background-size: cover;
+  border-radius: 20px;
 }
 
 .accordion .accordion-container {
@@ -1127,6 +1106,10 @@ input[type=checkbox] {
 
 .accordion .accordion-body {
   margin-left: 3.125rem;
+}
+
+#details.accordion {
+  padding: 5rem;
 }
 
 /*************************/
@@ -1244,6 +1227,11 @@ input[type=checkbox] {
   height: 27rem;
   background: url("/src/assets/img/details-2-background2.jpg") center center no-repeat;
   background-size: cover;
+  border-radius: 20px;
+}
+
+.tabs {
+  padding: 5rem;
 }
 
 /****************************/
@@ -2485,6 +2473,32 @@ a:hover.back-to-top {
   .modal__title {
     font-size: 2rem;
   }
+}
+.scroll-hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 1s;
+  -webkit-transition: opacity 1s, transform 1s;
+  -moz-transition: opacity 1s, transform 1s;
+  -ms-transition: opacity 1s, transform 1s;
+  -o-transition: opacity 1s, transform 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.img-group:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.img-group:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.img-group:nth-child(4) {
+  transition-delay: 600ms;
 }
 
 /*# sourceMappingURL=App.css.map */

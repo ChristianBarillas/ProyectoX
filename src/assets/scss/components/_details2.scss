@@ -8,6 +8,7 @@
 	margin-left: auto;
 	padding-top: 2rem;
 	padding-bottom: 5.75rem;
+
 }
 
 .tabs .nav-tabs {
@@ -114,5 +115,11 @@
 	height: 27rem;
 	background: url('/src/assets/img/details-2-background2.jpg') center center no-repeat;
 	background-size: cover;
+	border-radius: 20px;
+	
 }
 
+
+.tabs {
+	padding: 5rem;
+}

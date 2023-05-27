@@ -6,6 +6,8 @@
 	height: 27rem;
 	background: url('/src/assets/img/details-1-background.jpg') center center no-repeat;
 	background-size: cover;
+	border-radius: 20px;
+	
 }
 
 .accordion .accordion-container {
@@ -14,6 +16,7 @@
 	margin-left: auto;
 	padding-top: 6.375rem;
 	padding-bottom: 1.5rem;
+	
 }
 
 .accordion h2 {
@@ -78,4 +81,9 @@
 
 .accordion .accordion-body {
 	margin-left: 3.125rem;
+}
+
+#details.accordion{
+
+	padding: 5rem;
 }

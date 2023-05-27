@@ -1,82 +1,48 @@
-
-/***************************/
-/*     06. Description     */
-/***************************/
 .cards-1 {
 	padding-top: 3rem;
 	padding-bottom: 2.875rem;
-	
-}
-
-.cards-1 .card {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .cards-1 .card {
 	margin-bottom: 2.5rem;
 	border: none;
 	text-align: center;
-}
-
-.cards-1 .fa-stack {
-	width: 6rem;
-	height: 6rem;
-	margin-right: auto;
-	margin-bottom: 1rem;
-	margin-left: auto;
-	line-height: 6rem;
-	text-align: left;
-}
-
-.cards-1 .fa-stack .hexagon {
-	position: absolute;
-	width: 6rem;
-	height: 6rem;
-	background: url('/src/assets/img/hexagon-green.svg') center center no-repeat;
-	background-size: 6rem 6rem;
-}
-
-.cards-1 .fa-stack-1x {
-	color: #fff;
-	font-size: 2rem;
-}
-
-.cards-1 .card-body {
-	padding: 0;
-}
-
-.cards-1 .card-title {
-	margin-bottom: 0.625rem;
-}
-
-
-
-/***************************/
-/*     Christian barillas 07 may 2023     */
-
-
-.card{
 	background: var(--color-bg2);
 	padding: 2rem;
 	border-radius: 2rem;
+	box-shadow: 0 2px 4px #00BF97;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .cards-1 .card-body {
+	padding: 0;
+  }
+  
+  .cards-1 .card-title {
+	margin-bottom: 0.625rem;
+  }
+  
+  .card {
 	transition: var(--transition);
 	transform: translate3d(0, 0, 0);
-animation: float 3s ease-in-out infinite;
-	box-shadow: 0 8px 16px #5A80AF;
-	
-	
-}
-
-
-/* Definimos la animación "float" */
-@keyframes float {
-  0% {
-    transform: translate3d(0, 0, 0); /* El cuadro no se mueve */
+	animation: float 3s ease-in-out infinite;
   }
-  50% {
-    transform: translate3d(0, -10px, 10px); /* El cuadro se mueve hacia arriba y hacia adelante */
+  
+  @keyframes float {
+	0% {
+	  transform: translate3d(0, 0, 0);
+	}
+	50% {
+	  transform: translate3d(0, -10px, 10px);
+	}
+	100% {
+	  transform: translate3d(0, 0, 0);
+	}
   }
-  100% {
-    transform: translate3d(0, 0, 0); /* El cuadro vuelve a su posición original */
-  }
-}
-
-
-
-/***************************/
+  

@@ -10,7 +10,7 @@ const Intro1 =()=>{
   return (
 
     <div>
- <div id="intro" className="basic-1 ">
+ <div id="intro" className="basic-1 scroll-hidden">
         <div className="container">
             <div className="row">
                 <div className="col-lg-5">

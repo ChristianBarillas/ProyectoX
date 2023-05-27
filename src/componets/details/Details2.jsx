@@ -1,27 +1,17 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-
+import React from "react"
 
 
 
 const Details2 =()=>{
     
-    useEffect(() => {
-        AOS.init({
-          duration: 1000,
-          easing: 'ease-out-cubic',
-          once: true,
-        });
-      }, []);
+    
   return (
 
-    <div>
+    <div className="scroll-hidden">
 
 
  {/* Details 2  */}
-	<div className="tabs" data-aos="fade-up">
+	<div className="tabs " >
         <div className="area-1">
             <div className="tabs-container">
                 
@@ -50,15 +40,15 @@ rentabilidad. Full <a className="green page-scroll" href="#services">Services</a
                         
                          {/* Progress Bars  */}
                         <div className="progress-container" >
-                            <div className="title" data-aos="fade-up">Manejo de Suministros 100%</div>
+                            <div className="title">Manejo de Suministros 100%</div>
                             <div className="progress">
                                 <div className="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <div className="title" data-aos="fade-up">Incremento de Oportunidades 76%</div>
-                            <div className="progress" data-aos="fade-up">
+                            <div className="title">Incremento de Oportunidades 76%</div>
+                            <div className="progress">
                                 <div className="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <div className="title" data-aos="fade-up">Apoyo a Ventas 90%</div>
+                            <div className="title" >Apoyo a Ventas 90%</div>
                             <div className="progress">
                                 <div className="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -106,7 +96,7 @@ escalabilidad on demand</div>
                     {/* end of tab  */}
 
                      {/* Tab  */}
-                    <div className="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3" data-aos="fade-up">
+                    <div className="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3" >
                         <p><strong>OnTime WMS</strong> es un software potente, robusto, versátil, flexible y<a className="green" href="#your-link"> multi plataforma.</a></p>
                         <p><strong>Nuestro objetivo es:</strong> ayudar a tu compañía a desarrollar el 100% de su potencial y <a className="green" href="#your-link">crecimiento.</a></p>
                         <ul className="list-unstyled li-space-lg">

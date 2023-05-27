@@ -16,10 +16,10 @@ const Description1 =()=>{
  <div className="cards-1 ">
         <div className="container">
             <div className="row">
-                <div className="col-lg-12">
+                <div className="col-lg-12 img-group">
                     
                     {/* Card  */}
-                    <div className="card">
+                    <div className="card img-group scroll-hidden">
                        
                         <img src={IMG1}/>
 
@@ -31,7 +31,7 @@ const Description1 =()=>{
                      {/* end of card  */}
 
                      {/* Card  */}
-                    <div className="card">
+                    <div className="card img-group scroll-hidden">
 
                     <img src={IMG2}/>
                 
@@ -43,7 +43,7 @@ const Description1 =()=>{
                     {/* end of card  */}
 
                      {/* Card  */}
-                    <div className="card">
+                    <div className="card img-group scroll-hidden">
                        
                     <img src={IMG3}/>
 
