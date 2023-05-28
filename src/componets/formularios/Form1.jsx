@@ -1,10 +1,15 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Modal from '../modals/Modal';
+
+
+
 
 
 
 
 const Form1 = () =>{
+    const [showModal, setShowModal] = useState(false);
 
     const form = useRef();
 
@@ -16,6 +21,9 @@ const Form1 = () =>{
       .sendForm('service_l2457sy', 'template_9v0qkvn', form.current, 'aMTVpNLjonZPkjElR')
       .then((result) => {
         console.log(result.text);
+       if(result.text === 'OK'){
+   setShowModal(true);
+       }
        
       })
       .catch((error) => {
@@ -76,7 +84,7 @@ const Form1 = () =>{
                         </div>
                         <div className="form-group">
                             <select className="form-control-select" name="message" id="lselect" required >
-                                <option className="select-option" value="" disabled selected>Interesado en...</option>
+                                <option className="select-option" value="" disabled defaultValue>Interesado en...</option>
                                 <option className="select-option" value="Off The Ground">WMS OnTime</option>
                                 <option className="select-option" value="Accelerated Growth">CRM +Plus</option>
                                 <option className="select-option" value="Market Domination">Otros</option>
@@ -98,6 +106,7 @@ const Form1 = () =>{
                     </form>
                     {/* end of call me form  */}
 
+
             
                 </div>
                   {/* end of col  */}
@@ -109,7 +118,7 @@ const Form1 = () =>{
       {/* end of form-1  */}
      {/* end of call me  */}
 
-
+<Modal showModal={showModal} setShowModal={setShowModal}/>
                 </div>
     )
 }
