@@ -2,6 +2,9 @@ import React from 'react'
 import SoftwareImg from '/src/assets/img/software.jpg'
 import HardwareImg from '/src/assets/img/hardware.jpg'
 import ConsultoriaImg from '/src/assets/img/consultoria.jpg'
+import IMG1 from '/src/assets/img/animation7.svg'
+import IMG2 from '/src/assets/img/animation8.svg'
+import IMG3 from '/src/assets/img/animation9.svg'
 import { Link } from 'react-router-dom'
 
 
@@ -16,11 +19,11 @@ const Service =()=>{
 
 
  {/* Header  */}
-    <header id="header" className="ex-header">
+    <header id="header" className="ex-header ">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
-                    <h1>Services</h1>
+                    <h1>Servicios</h1>
                 </div>    {/* end of col  */}
             </div>{/* end of row  */}
         </div>  {/* end of container */}
@@ -29,7 +32,7 @@ const Service =()=>{
      {/* end of header */}
 
 {/* Services  */}
-    <div id="services" className="cards-2">
+    <div id="services" className="cards-2 ">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
@@ -48,10 +51,7 @@ const Service =()=>{
                             <img className="img-fluid" src={SoftwareImg} alt="alternative"/>
                         </div>
 
-  {/* implementacion de texto sobreexpuesto en imagenes con hover */}
-                        <div className="card-text-overlay">
-                             <h4>Mi nuevo texto</h4>  
-                        </div>
+
 
                         <div className="card-body">
                             <h3 className="card-title">Software</h3>
@@ -82,7 +82,7 @@ const Service =()=>{
 {/* implementando imagenes que aparecen encima */}
 
                         <div className="card-image-hover">
-                             <img src={HardwareImg} alt="Card image hover" className="card-image-hover-img" />
+                             <img src={IMG1} alt="Card image hover" className="card-image-hover-img" />
                         </div>
                        
                         <div className="button-container">
@@ -100,9 +100,7 @@ const Service =()=>{
                         </div>
 
   {/* implementacion de texto sobreexpuesto en imagenes con hover */}
-                        <div className="card-text-overlay">
-                             <h4>Mi nuevo texto</h4>  
-                        </div>
+                      
 
                         <div className="card-body">
                             <h3 className="card-title">Hardware</h3>
@@ -130,7 +128,7 @@ const Service =()=>{
 
 {/* implementando imagenes que aparecen encima */}
                         <div className="card-image-hover">
-                             <img src={HardwareImg} alt="Card image hover" className="card-image-hover-img" />
+                             <img src={IMG2} alt="Card image hover" className="card-image-hover-img" />
                         </div>
 
                         <div className="button-container">
@@ -149,11 +147,7 @@ const Service =()=>{
                             <img className="img-fluid" src={ConsultoriaImg} alt="alternative"/>
                         </div>
                         
-                        {/* implementacion de texto sobreexpuesto en imagenes con hover */}
-                        <div className="card-text-overlay">
-                             <h4>Mi nuevo texto</h4>  
-                        </div>
-
+               
                         <div className="card-body">
                             <h3 className="card-title">Servicios</h3>
                             <p>Servicios profesionales de alto nivel</p>
@@ -182,7 +176,7 @@ const Service =()=>{
 {/* implementando imagenes que aparecen encima */}
 
                         <div className="card-image-hover">
-                             <img src={HardwareImg} alt="Card image hover" className="card-image-hover-img" />
+                             <img src={IMG3} alt="Card image hover" className="card-image-hover-img" />
                         </div>
 
                         <div className="button-container">

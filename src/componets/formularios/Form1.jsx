@@ -18,16 +18,16 @@ const Form1 = () =>{
     e.preventDefault();
 
     emailjs
-      .sendForm('service_l2457sy', 'template_9v0qkvn', form.current, 'aMTVpNLjonZPkjElR')
+      .sendForm('service_hujac84', 'template_clfzyhg', form.current, 'NvAnm4cJfNm-WENuh')
       .then((result) => {
-        console.log(result.text);
+        
        if(result.text === 'OK'){
    setShowModal(true);
        }
        
       })
       .catch((error) => {
-        console.log(error.text);
+       alert("error al enviar formulario, vuelva a intentar más tarde, si el problema persiste llamenos al +503 7785 2155 o +503 2300 6127");
       });
   };
 
@@ -69,17 +69,17 @@ const Form1 = () =>{
                      <form ref={form} onSubmit={sendEmail}>
                         <div className="form-group">
                             <input type="text" className="form-control-input" id="lname" name="user_name" required/>
-                            <label className="label-control" for="lname">Nombre</label>
+                            <label className="label-control" >Nombre</label>
                             <div className="help-block with-errors"></div>
                         </div>
                         <div className="form-group">
-                            <input type="text" className="form-control-input" id="lphone" name="lphone" required/>
-                            <label className="label-control" for="lphone">teléfono</label>
+                            <input type="text" className="form-control-input" id="lphone" name="message" required/>
+                            <label className="label-control" >teléfono</label>
                             <div className="help-block with-errors"></div>
                         </div>
                         <div className="form-group">
                             <input type="email" className="form-control-input" id="email" name="user_email" required/>
-                            <label className="label-control" for="lemail">Email</label>
+                            <label className="label-control" >Email</label>
                             <div className="help-block with-errors"></div>
                         </div>
                         <div className="form-group">

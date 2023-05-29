@@ -153,8 +153,7 @@
 		text-align: left;
 	}
 
-	.counter #counter .cell {
-	}
+	
 	/* end of about */
 
 
@@ -205,19 +204,7 @@
 		font-size: 0.8125rem;
 	}
 
-	.navbar-custom .fa-stack .hexagon {
-		width: 1.625rem;
-		height: 1.625rem;
-		position: absolute;
-		background: url('../images/hexagon-green.svg') center center no-repeat;
-		background-size: 1.625rem 1.625rem;
-		transition: all 0.2s ease;
-	}
 
-	.navbar-custom .fa-stack:hover .hexagon {
-		background: url('../images/hexagon-white.svg') center center no-repeat;
-		background-size: 1.625rem 1.625rem;
-	}
 	
 	.navbar-custom .fa-stack-1x {
 		font-size: 0.6875rem;

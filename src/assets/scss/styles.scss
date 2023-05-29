@@ -1,5 +1,5 @@
 @use 'components/generalStyles';
-@use 'components/preloader';
+// @use 'components/preloader';
 @use 'components/navigator';
 @use 'components/header';
 @use 'components/intro';
@@ -16,7 +16,7 @@
 @use 'components/contact';
 @use 'components/footer';
 @use 'components/copyright';
-@use 'components/backtoTopButton';
+// @use 'components/backtoTopButton';
 @use 'components/extraPages';
 @use 'components/mediaQueries';
 @use 'components/modal';

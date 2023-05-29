@@ -13,6 +13,7 @@ import Somos from "../../pages/Somos";
 import Contact from "../../pages/Contact";
 import TermsConditions from "../../pages/TermsConditions";
 import PrivacyPolicy from "../../pages/PrivacyPolicy";
+import NavbarScroll from "../scroll/NavbarScroll";
 
 
 
@@ -24,6 +25,7 @@ const Dashboard = () => {
 
 <BrowserRouter>
 <Navbar/>
+<NavbarScroll/>
 
 <Routes>
   

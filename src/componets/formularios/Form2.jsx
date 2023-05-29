@@ -1,26 +1,33 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom'
-
+import Modal from '../modals/Modal';
 
 
 
 
 const Form2 = () =>{
+    const [showModal, setShowModal] = useState(false);
 
     const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_hujac84', 'template_clfzyhg', form.current, 'NvAnm4cJfNm-WENuh')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_hujac84', 'template_92ige3s', form.current, 'NvAnm4cJfNm-WENuh')
+      .then((result) => {
+        
+       if(result.text === 'OK'){
+   setShowModal(true);
+       }
+       
+      })
+      .catch((error) => {
+       alert("error al enviar formulario, vuelva a intentar más tarde, si el problema persiste llamenos al +503 7785 2155 o +503 2300 6127");
+      });
+  };
 
     return(
 
@@ -79,17 +86,17 @@ const Form2 = () =>{
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="form-group">
                             <input type="text" className="form-control-input" name="user_name" id="cname" required/>
-                            <label className="label-control" for="cname">Nombre</label>
+                            <label className="label-control" htmlFor="cname">Nombre</label>
                             <div className="help-block with-errors"></div>
                         </div>
                         <div className="form-group">
-                            <input type="email" className="form-control-input" name="user_email" id="cemail" required/>
-                            <label className="label-control" for="cemail">Email</label>
+                            <input type="email" className="form-control-input" name="user_email" id="cemail" required />
+                            <label className="label-control" htmlFor="cemail">Email</label>
                             <div className="help-block with-errors"></div>
                         </div>
                         <div className="form-group">
                             <textarea className="form-control-textarea" name="message" id="cmessage" required></textarea>
-                            <label className="label-control" for="cmessage">Mensaje</label>
+                            <label className="label-control" htmlFor="cmessage">Mensaje</label>
                             <div className="help-block with-errors"></div>
                         </div>
                         <div className="form-group checkbox">
@@ -115,7 +122,7 @@ const Form2 = () =>{
      {/* end of form-2  */}
     {/* end of contact  */}
 
-
+    <Modal showModal={showModal} setShowModal={setShowModal}/>
                 </div>
     )
 }

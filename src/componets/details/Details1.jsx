@@ -4,11 +4,11 @@ const Details1 = () => {
  
   return (
     <div >
-      <div id="details" className="accordion " >
+      <div id="details" className="accordion scroll-hidden " >
         <div className="area-1  "></div>
-        <div className="area-2 img-group">
+        <div className="area-2 ">
           <div className="accordion-container  " id="accordionOne">
-            <h2 className="img-group scroll-hidden" >CRM +PLUS. Pensado para todo tipo de negocios</h2>
+            <h2 className="img-group " >CRM +PLUS. Pensado para todo tipo de negocios</h2>
             <div className="item">
               <div id="headingOne">
                 <span
@@ -19,7 +19,7 @@ const Details1 = () => {
                   role="button"
                 >
                   <span className="circle-numbering">1</span>
-                  <span className="accordion-title img-group scroll-hidden" >
+                  <span className="accordion-title " >
                     Obtén pronósticos precisos.
                   </span>
                 </span>
@@ -46,7 +46,7 @@ const Details1 = () => {
                   role="button"
                 >
                   <span className="circle-numbering">2</span>
-                  <span className="accordion-title img-group scroll-hidden" >
+                  <span className="accordion-title " >
                     Simplifica tareas.
                   </span>
                 </span>
@@ -73,7 +73,7 @@ const Details1 = () => {
                   role="button"
                 >
                   <span className="circle-numbering">3</span>
-                  <span className="accordion-title img-group scroll-hidden" >
+                  <span className="accordion-title " >
                     Comunicación OMNICANAL.
                   </span>
                 </span>

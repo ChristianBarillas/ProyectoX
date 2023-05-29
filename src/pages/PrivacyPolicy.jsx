@@ -1,6 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Modal from '../componets/modals/Modal';
 
 
 
@@ -8,18 +9,27 @@ import { Link } from 'react-router-dom'
 
 const PrivacyPolicy = () =>{
 
+    const [showModal, setShowModal] = useState(false);
+
     const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm('service_l2457sy', 'template_aklnef9', form.current, 'aMTVpNLjonZPkjElR')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_hujac84', 'template_92ige3s', form.current, 'NvAnm4cJfNm-WENuh')
+      .then((result) => {
+        
+       if(result.text === 'OK'){
+   setShowModal(true);
+       }
+       
+      })
+      .catch((error) => {
+       alert("error al enviar formulario, vuelva a intentar más tarde, si el problema persiste llamenos al +503 7785 2155 o +503 2300 6127");
+      });
+  };
 
 
     return(
@@ -163,17 +173,17 @@ const PrivacyPolicy = () =>{
                                 <form ref={form} onSubmit={sendEmail}>
                                     <div className="form-group">
                                         <input type="text" className="form-control-input" name="user_name" id="pname" required/>
-                                        <label className="label-control" for="pname">Nombre</label>
+                                        <label className="label-control" htmlFor="pname">Nombre</label>
                                         <div className="help-block with-errors"></div>
                                     </div>
                                     <div className="form-group">
                                         <input type="email" className="form-control-input" name="user_email" id="pemail" required/>
-                                        <label className="label-control" for="pemail">Email</label>
+                                        <label className="label-control" htmlFor="pemail">Email</label>
                                         <div className="help-block with-errors"></div>
                                     </div>
                                     <div className="form-group">
                                         <select className="form-control-select" id="pselect" name="message" required>
-                                            <option className="select-option" value="" disabled selected>Seleccione...</option>
+                                            <option className="select-option" value="" disabled defaultValue>Seleccione...</option>
                                             <option className="select-option" value="Delete data">Consulta de Información</option>
                                             <option className="select-option" value="Show me data">Borrado Permanente</option>
                                         </select>
@@ -218,7 +228,7 @@ const PrivacyPolicy = () =>{
     </div>{/* end of ex-basic-1  */}
      {/* end of breadcrumbs  */}
 
-    
+     <Modal showModal={showModal} setShowModal={setShowModal}/>
         </div>
     )
 }

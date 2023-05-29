@@ -1,12 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { Link,NavLink } from "react-router-dom";
-import Perfil from "../login/Perfil";
-import SignUp from "../login/SignUp";
-import SignOut from "../login/SignOut";
-import Register from "../login/Register";
 import logo from "/src/assets/img/logo.png"
+
 
 const Navbar = ()=>{
 

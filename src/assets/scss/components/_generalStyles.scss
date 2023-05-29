@@ -254,19 +254,21 @@ strong {
 
 .label-control {
 	position: absolute;
-	top: 0.8125rem;
+	top: -0.001rem;
 	left: 1.375rem;
 	color: #787976;
 	opacity: 1;
 	font: 400 0.875rem/1.375rem "Open Sans", sans-serif;
 	cursor: text;
 	transition: all 0.2s ease;
+	
 }
 
 /* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	.label-control {
 		top: 0.9375rem;
+		
 	}
 }
 
@@ -278,6 +280,7 @@ strong {
 	opacity: 1;
 	font-size: 0.75rem;
 	font-weight: 500;
+	
 }
 
 .form-control-input,
@@ -580,5 +583,4 @@ input[type='checkbox'] {
 	animation: fadeOut 0.8s;
 }
 /* end of fade animation for image slider - magnific popup */
-
 
