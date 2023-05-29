@@ -2384,29 +2384,25 @@ input[type=checkbox] {
 }
 .scroll-hidden {
   opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 1s, transform 1s;
-  -webkit-transition: opacity 1s, transform 1s;
-  -moz-transition: opacity 1s, transform 1s;
-  -ms-transition: opacity 1s, transform 1s;
-  -o-transition: opacity 1s, transform 1s;
+  transform: translateY(30%);
+  transition: opacity 0.6s ease-out, transform 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .show {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .img-group:nth-child(2) {
-  transition-delay: 200ms;
+  transition-delay: 0.2s;
 }
 
 .img-group:nth-child(3) {
-  transition-delay: 400ms;
+  transition-delay: 0.4s;
 }
 
 .img-group:nth-child(4) {
-  transition-delay: 600ms;
+  transition-delay: 0.6s;
 }
 
 /*# sourceMappingURL=App.css.map */

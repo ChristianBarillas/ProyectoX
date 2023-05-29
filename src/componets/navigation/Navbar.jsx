@@ -22,7 +22,7 @@ const Navbar = ()=>{
        
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-awesome fas fa-bars"></span>
-            <span className="navbar-toggler-awesome fas fa-times"></span>
+       
         </button>
   
 
@@ -52,8 +52,7 @@ const Navbar = ()=>{
 
                
             </ul>
-            {/* <span className="nav-item social-icons"> <span className="fa-stack">  <a href="https://www.facebook.com/gosensv" target="_blank" rel="noopener" > <span className="hexagon"></span><FontAwesomeIcon icon={faCoffee} /> </a> </span>  <span className="fa-stack"> <a href="https://twitter.com/gosensv" target="_blank" rel="noopener">  <FontAwesomeIcon icon={faCoffee} />  </a> </span> </span></div>  */}
-
+            
 
 
 
