@@ -67,10 +67,10 @@ const TermsConditions = () => {
                 </p>
                 <p>
                   Cuando se registra por primera vez en una plataforma de Gosén
-                  S&T y al utilizar los servicios, recopilamos cierta{" "}
-                  <a className="green" href="#your-link">
+                  S&T y al utilizar los servicios, recopilamos cierta
+             
                     Información Personal
-                  </a>
+                  
                   , como:
                 </p>
                 <ul className="list-unstyled li-space-lg indent">
@@ -143,10 +143,10 @@ const TermsConditions = () => {
                   empaquetan por separado y no tienen licencia GPL 2.0. En su
                   lugar, estos archivos heredan la licencia de uso personal de
                   Gosén S&T. Estos archivos se proporcionan a todos los clientes
-                  para uso personal. No puede ofrecerlos,{" "}
-                  <a className="green" href="#terms-conditions.html">
+                  para uso personal. No puede ofrecerlos,
+            
                     modificados o sin modificar
-                  </a>
+            
                   , para su redistribución o reventa de ningún tipo. No puede
                   usar uno de nuestros temas y/o contenido en un dominio HTML
                   personal.{" "}
@@ -179,10 +179,10 @@ const TermsConditions = () => {
                 <p>
                   Gosén S&T se compromete a respetar la privacidad de su
                   información personal. Para obtener más información sobre cómo
-                  protegemos su información personal, consulte nuestra{" "}
-                  <a className="green" href="privacy-policy.html">
+                  protegemos su información personal, consulte nuestra
+                 
                     Política de Privacidad
-                  </a>{" "}
+               
                   en línea. Sin embargo, es importante tener en cuenta que el
                   Internet no es un medio de comunicación seguro. Por este
                   motivo, no podemos garantizar la privacidad de la información

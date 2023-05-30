@@ -75,7 +75,7 @@ const PrivacyPolicy = () =>{
                     <div className="text-container">
                         <h3>Datos privados que recibimos y recopilamos</h3>
                         <p>Gosén S&T respeta su derecho de privacidad. Esta política resume qué información personal podemos recoger, de qué manera podemos utilizar esta información y otros temas importantes relacionados con su privacidad y protección de datos. Nuestra política es cumplir con todas las leyes de privacidad y de protección de datos vigentes. Este compromiso refleja el valor que le damos al hecho de obtener y conservar la confianza de nuestros clientes, socios comerciales y demás personas que comparten su información personal con nosotros.</p>
-                        <p>Esta se aplica a todos los sitios de Internet y/o aplicaciones móviles administrados por <a className="green" href="#your-link">GOSEN S&T</a> por ejemplo:</p>
+                        <p>Esta se aplica a todos los sitios de Internet y/o aplicaciones móviles administrados por GOSEN S&T por ejemplo:</p>
                         <div className="row">
                             <div className="col-md-6">
                                 <ul className="list-unstyled li-space-lg indent">
@@ -163,7 +163,7 @@ const PrivacyPolicy = () =>{
                             <div className="text-container last">
                                 <h3>Consulta tu información</h3>
                                 <p>Gosén S&T utiliza tecnología de seguimiento en Landing Page, en las aplicaciones y plataformas, incluidos los identificadores de aplicaciones móviles y una identificación de usuario única de Gosén para ayudarnos a reconocerlo en los diferentes servicios, para monitorear el uso, enrutamiento del tráfico web y para personalizar y mejorar los servicios.</p>
-                                <p> Al visitar el Landing Page, usted acepta el uso de cookies en su navegador y correos electrónicos basados en HTML. Las cookies son pequeños archivos de texto que se colocan en su dispositivo cuando visita un sitio web. Al usar cualquiera de ellos o enviar o recopilar cualquier información personal a través de los servicios, usted acepta el uso de dicha <a className="green" href="#your-link">Información Personal</a></p>
+                                <p> Al visitar el Landing Page, usted acepta el uso de cookies en su navegador y correos electrónicos basados en HTML. Las cookies son pequeños archivos de texto que se colocan en su dispositivo cuando visita un sitio web. Al usar cualquiera de ellos o enviar o recopilar cualquier información personal a través de los servicios, usted acepta el uso de dicha Información Personal</p>
                             </div> {/* end of text container  */}
                         </div>   {/* end of col */}
                         <div className="col-md-6">

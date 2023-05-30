@@ -36,7 +36,7 @@ const Details2 =()=>{
                     <div className="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                         <h4>Control Total de Inventarios</h4>
                         <p>Optimización de los procesos de almacén, multiplicando su eficiencia y 
-rentabilidad. Full <a className="green page-scroll" href="#services">Services</a> e integración con SAP y Zebra de ser requerido.</p>
+rentabilidad. Full Services e integración con SAP y Zebra de ser requerido.</p>
                         
                          {/* Progress Bars  */}
                         <div className="progress-container" >
