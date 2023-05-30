@@ -3,6 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "/src/assets/img/logo.png";
 import $ from "jquery"; // Importa jQuery
 
+
+
 const Navbar = () => {
 
   // Activa el menú de hamburguesa al cargar el componente

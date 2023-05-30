@@ -30,7 +30,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "swiper": "^9.2.2",
-    "typed.js": "^2.0.15"
+    "typed.js": "^2.0.15",
+    "validator": "^13.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
