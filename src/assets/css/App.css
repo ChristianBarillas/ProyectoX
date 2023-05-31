@@ -831,8 +831,14 @@ input[type=checkbox] {
     width: 100%;
     max-width: 100%;
     height: auto;
+    z-index: -1;
   }
 }
+.cards-1 .card {
+  /* Otras propiedades de estilo... */
+  z-index: -1;
+}
+
 /************************/
 /*     07. Services     */
 /************************/
