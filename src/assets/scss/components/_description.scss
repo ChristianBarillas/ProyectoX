@@ -75,3 +75,20 @@
 	position: relative;
 	z-index: 2;
 }
+
+
+
+@media (max-width: 992px) {
+	.cards-1 {
+	  padding-left: 2rem;
+	  padding-right: 2rem;
+	}
+  
+	.cards-1 .card {
+	  width: 100%;
+	  max-width: 400px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+  }
+  
