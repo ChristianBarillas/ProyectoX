@@ -3,9 +3,9 @@
 	padding-bottom: 2.875rem;
 	display: flex;
 	justify-content: center;
-  }
-  
-  .cards-1 .card {
+}
+
+.cards-1 .card {
 	margin-bottom: 2.5rem;
 	border: none;
 	text-align: center;
@@ -18,23 +18,24 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-  }
-  
-  .cards-1 .card-body {
+	position: relative;
+}
+
+.cards-1 .card-body {
 	padding: 0;
-  }
-  
-  .cards-1 .card-title {
+}
+
+.cards-1 .card-title {
 	margin-bottom: 0.625rem;
-  }
-  
-  .card {
+}
+
+.card {
 	transition: var(--transition);
 	transform: translate3d(0, 0, 0);
 	animation: float 3s ease-in-out infinite;
-  }
-  
-  @keyframes float {
+}
+
+@keyframes float {
 	0% {
 	  transform: translate3d(0, 0, 0);
 	}
@@ -44,5 +45,33 @@
 	100% {
 	  transform: translate3d(0, 0, 0);
 	}
-  }
-  
+}
+
+.cards-1 .card-image {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.cards-1 .card {
+	position: relative;
+}
+
+.card-image-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.card-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.card-body {
+	position: relative;
+	z-index: 2;
+}

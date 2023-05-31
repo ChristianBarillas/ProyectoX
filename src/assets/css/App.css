@@ -583,6 +583,10 @@ input[type=checkbox] {
   z-index: 999;
 }
 
+.navbar {
+  z-index: 999;
+}
+
 .navbar-custom .navbar-brand {
   font-size: 0;
 }
@@ -795,6 +799,7 @@ input[type=checkbox] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .cards-1 .card-body {
@@ -822,6 +827,35 @@ input[type=checkbox] {
     transform: translate3d(0, 0, 0);
   }
 }
+.cards-1 .card-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.cards-1 .card {
+  position: relative;
+}
+
+.card-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
+}
+
 /************************/
 /*     07. Services     */
 /************************/
@@ -977,7 +1011,7 @@ input[type=checkbox] {
 .accordion .area-1 {
   height: 27rem;
   background: url("/src/assets/img/details-1-background.jpg") center center no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-radius: 20px;
 }
 
@@ -1055,6 +1089,11 @@ input[type=checkbox] {
 
 #details.accordion {
   padding: 5rem;
+}
+
+.card-body img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*************************/
@@ -1171,12 +1210,12 @@ input[type=checkbox] {
 .tabs .area-2 {
   height: 27rem;
   background: url("/src/assets/img/details-2-background2.jpg") center center no-repeat;
-  background-size: cover;
+  background-size: contain;
   border-radius: 20px;
 }
 
 .tabs {
-  padding: 5rem;
+  padding: 2rem;
 }
 
 /****************************/

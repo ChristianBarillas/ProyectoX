@@ -114,12 +114,12 @@
 .tabs .area-2 {
 	height: 27rem;
 	background: url('/src/assets/img/details-2-background2.jpg') center center no-repeat;
-	background-size: cover;
+	background-size: contain;
 	border-radius: 20px;
 	
 }
 
 
 .tabs {
-	padding: 5rem;
+	padding: 2rem;
 }
