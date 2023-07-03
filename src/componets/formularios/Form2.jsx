@@ -16,7 +16,7 @@ const Form2 = () =>{
     e.preventDefault();
 
     emailjs
-      .sendForm('service_hujac84', 'template_92ige3s', form.current, 'NvAnm4cJfNm-WENuh')
+      .sendForm('example', 'example', form.current, 'example')
       .then((result) => {
         
        if(result.text === 'OK'){
