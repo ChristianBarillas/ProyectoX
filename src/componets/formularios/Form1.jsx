@@ -18,7 +18,7 @@ const Form1 = () =>{
     e.preventDefault();
 
     emailjs
-      .sendForm(' exmple@', 'example@', form.current, 'example')
+      .sendForm('exmple@', 'example@', form.current, 'example')
       .then((result) => {
         
        if(result.text === 'OK'){
